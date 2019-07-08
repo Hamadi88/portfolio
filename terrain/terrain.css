@@ -1,0 +1,221 @@
+body{
+	color:white;
+	border-color:white;	
+	margin:2;
+	background-image:url("terrain.jpg");
+	height:100vh;
+	padding:40px;
+	background-attachment:fixed;
+}
+
+img{
+height:100%;
+width:100%;
+position: absolute;
+}
+
+
+.terrain{
+	width:95%;
+	height:90%;
+	position:fixed;
+	border:solid 2px white;
+	overflow:hidden;
+	
+}
+
+#gauche{
+	width:10%;
+	height:45%;
+	position:absolute;
+	top:27.5%;
+	border:solid 2px white;
+	margin-left:auto;
+	border-left:none;
+}
+
+#droite{
+	width:10%;
+	height:45%;
+	position:absolute;
+	top:27.5%;
+	left:90%;
+	border:solid 2px white;
+	border-right: none;
+}
+
+#centre{
+	position:absolute;
+	left:50%;
+	height:100%;
+	border:solid 0.5px white;
+	width:0;	
+}
+
+#surfaceg{
+	position:absolute;
+	left:0;
+	width:20%;
+	top:15%;
+	height:70%;
+	border:solid 2px white;	
+	border-left:none;
+
+}
+
+#surfaced{
+	position:absolute;
+	right:0;
+	width:20%;
+	top:15%;
+	height:70%;
+	border:solid 2px white;
+	border-right:none;
+}
+#cercle{
+position:absolute;
+top:30%;
+right:25%;
+left:42%;
+border-radius:50%;
+border:solid 2px white;
+width:15vw;
+height:15vw;
+
+}
+
+#demicercleg{
+	position:absolute;
+	width:5vmax;
+	height:10vmax;
+	top:40%;
+	right:74.50%;
+	border:solid 2px white;
+    border-radius:0vmax 10vmax 10vmax 0vmax;
+    border-left: none;
+
+
+}
+
+#demicercled{
+	position:absolute;
+	width:5vmax;
+	height:10vmax;
+	top:40%;
+	left:74.50%;
+	border:solid 2px white;
+    border-radius:10vmax 0vmax 0vmax 10vmax;
+    border-right:none;
+
+}
+
+#pointdepg{
+position:absolute;
+background-color:white;
+right:85%;
+width:0.5vmax;
+height:0.5vmax;
+top:50%;
+border-radius:50%;
+
+}
+
+#pointdepd{
+position:absolute;
+background-color:white;
+left:85%;
+width:0.5vmax;
+height:0.5vmax;
+top:50%;
+border-radius:50%;
+
+}
+
+#pointcentral{
+position:absolute;
+
+left:48%;
+width:4vmax;
+height:4vmax;
+top:40%;
+border-radius:50%;
+
+}
+#ballon{
+	display:inline;
+	position:absolute;
+	z-index: 1;
+
+left:48%;
+width:4vmax;
+height:4vmax;
+top:40%;
+border-radius:50%;
+
+}
+
+#cornergauchetop{
+position:absolute;
+left:-1%;
+top:-3%;
+width:2vmax;
+height:4vmax;
+border-radius:0vmax 4vmax 4vmax 0vmax;
+border:solid 2px white;
+
+}
+
+#cornergauchebas{
+position:absolute;
+left:-1%;
+bottom:-3%;
+width:2vmax;
+height:4vmax;
+border-radius:0vmax 4vmax 0vmax 0vmax;
+border:solid 2px white;
+
+}
+
+#cornerdroitetop{
+position:absolute;
+right:-1%;
+top:-3%;
+width:2vmax;
+height:4vmax;
+border-radius:0vmax 0vmax 0vmax 4vmax;
+border:solid 2px white;
+}
+
+#cornerdroitebas{
+position:absolute;
+right:-1%;
+bottom:-3%;
+width:2vmax;
+height:4vmax;
+border-radius:4vmax 0vmax 0vmax 0vmax;
+border:solid 2px white;
+}
+
+#ballon{
+
+	animation-duration:2s;
+	animation-name:jeu;
+}
+
+@keyframes jeu {
+	
+	0%	{left:48% ; top:40% ;}
+	10% {left:42% ; top:20% ;}
+	25%	{left:40%; top: 40%;}
+	50% {left:30%; top:70%;}
+	100%{left:20%; top:80%;}
+
+}
+
+
+
+
+
+
+
+
